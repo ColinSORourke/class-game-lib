@@ -103,10 +103,9 @@ function function1( arrData) {
         let j = Math.floor(Math.random() * (arrData.length - 1)) + 1;
         var li = document.createElement("li");
         let gifDiv = document.createElement("div");
+        gifDiv.id = "gif"
         let image = document.createElement("img")
         image.src = arrData[j][1] + "/" + arrData[j][1] + ".gif";
-        image.style.width = "150px";
-        image.style.height = "auto"
         let link = document.createElement('a')
         link.href= "games.html?" + arrData[j][1]
         link.target = "_blank"
@@ -114,6 +113,7 @@ function function1( arrData) {
         gifDiv.appendChild(link)
         li.appendChild(gifDiv)
         let textDiv = document.createElement("div")
+        textDiv.id = "text";
         
         let gameName = document.createElement("h")
         gameName.innerHTML = arrData[j][0];

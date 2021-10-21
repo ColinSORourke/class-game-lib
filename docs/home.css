@@ -29,7 +29,14 @@ body {
     border-radius: 20px;
 }
 
-#projects li img{
-    margin-top:5px;
+#gif {
+    width: 100%;
+    height: 70%;
 }
 
+#gif img{
+    margin-top:5px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: auto;
+}
