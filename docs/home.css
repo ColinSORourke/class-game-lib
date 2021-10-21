@@ -13,7 +13,6 @@ body {
 #projects ul {
     margin: auto;
     width: 100%;
-    overflow-y: auto;
     list-style-type: none;
     padding:0
 }
