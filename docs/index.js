@@ -99,12 +99,13 @@ function CSVToArray( strData, strDelimiter ){
 
 function function1( arrData) {
     var ul = document.getElementById("fullList");
-    while (arrData.length > 0){
+    while (arrData.length > 1){
         let j = Math.floor(Math.random() * (arrData.length - 1)) + 1;
         var li = document.createElement("li");
         let gifDiv = document.createElement("div");
         gifDiv.id = "gif"
         let image = document.createElement("img")
+        console.log(arrData.length);
         image.src = arrData[j][1] + "/" + arrData[j][1] + ".gif";
         let link = document.createElement('a')
         link.href= "games.html?" + arrData[j][1]
