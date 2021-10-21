@@ -98,37 +98,37 @@ function CSVToArray( strData, strDelimiter ){
 }
 
 function function1( arrData) {
-    let i = 1;
     var ul = document.getElementById("fullList");
-    while (i < arrData.length){
+    while (arrData.length > 0){
+        let j = Math.floor(Math.random() * (arrData.length - 1)) + 1;
         var li = document.createElement("li");
         let image = document.createElement("img")
-        image.src = arrData[i][1] + "/" + arrData[i][1] + ".gif";
+        image.src = arrData[j][1] + "/" + arrData[j][1] + ".gif";
         image.style.width = "150px";
         image.style.height = "auto"
         li.appendChild(image)
         let link = document.createElement('a')
-        link.href= "games.html?" + arrData[i][1]
+        link.href= "games.html?" + arrData[j][1]
         link.target = "_blank"
-        let linkText = document.createTextNode(arrData[i][0])
+        let linkText = document.createTextNode(arrData[j][0])
         link.appendChild(linkText)
         li.appendChild(link)
 
         let a = 2;
         let Authors = "";
-        Authors += arrData[i][a]
+        Authors += arrData[j][a]
         a += 1;
-        while(a < 9 && arrData[i][a] != ""){
-            Authors += ", " + arrData[i][a];
+        while(a < 9 && arrData[j][a] != ""){
+            Authors += ", " + arrData[j][a];
             a += 1;
         }
         let authorList = document.createTextNode(Authors);
         li.appendChild(authorList);
 
-        li.style.backgroundColor = arrData[i][11]
-        li.style.borderColor = arrData[i][12]
-        li.style.color = arrData[i][13]
+        li.style.backgroundColor = arrData[j][11]
+        li.style.borderColor = arrData[j][12]
+        li.style.color = arrData[j][13]
         ul.appendChild(li);
-        i += 1;
+        arrData.splice(j, 1);
     }
   }
