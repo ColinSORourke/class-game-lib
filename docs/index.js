@@ -102,18 +102,20 @@ function function1( arrData) {
     while (arrData.length > 0){
         let j = Math.floor(Math.random() * (arrData.length - 1)) + 1;
         var li = document.createElement("li");
+        let gifDiv = document.createElement("div");
         let image = document.createElement("img")
         image.src = arrData[j][1] + "/" + arrData[j][1] + ".gif";
         image.style.width = "150px";
         image.style.height = "auto"
-        li.appendChild(image)
+        gifDiv.appendChild(image)
+        li.appendChild(gifDiv)
+        let textDiv = document.createElement("div")
         let link = document.createElement('a')
         link.href= "games.html?" + arrData[j][1]
         link.target = "_blank"
         let linkText = document.createTextNode(arrData[j][0])
         link.appendChild(linkText)
-        li.appendChild(link)
-
+        textDiv.appendChild(link)
         let a = 2;
         let Authors = "";
         Authors += arrData[j][a]
@@ -122,8 +124,11 @@ function function1( arrData) {
             Authors += ", " + arrData[j][a];
             a += 1;
         }
-        let authorList = document.createTextNode(Authors);
-        li.appendChild(authorList);
+        let authorList = document.createElement("p");
+        authorList.innerHTML = Authors;
+        textDiv.appendChild(authorList);
+
+        li.appendChild(textDiv);
 
         li.style.backgroundColor = arrData[j][11]
         li.style.borderColor = arrData[j][12]
