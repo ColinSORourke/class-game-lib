@@ -1,11 +1,13 @@
-Game Name,Game URL,Author 1,Author 2,Author 3,Author 4,Author 5,Author 6,Author 7,Author 8,Github Link,Background Color,Border Color,Text Color
+Game Name,Game URL,Author 1,Author 2,Author 3,Author 4,Author 5,Author 6,Author 7,Author 8,"Github Link (Docs folder, please include a GameURL.gif)",Background Color,Border Color,Text Color
 Bee Game,beeGame,Colin O'Rourke,James Liu,,,,,,,https://github.com/ColinSORourke/ColinO_CGL/tree/master/docs/beeGame,#F2F230,#D17B0F,#000000
 Light Switch,lights,Colin O'Rourke,,,,,,,,https://github.com/ColinSORourke/ColinO_CGL/tree/master/docs/lights,lightgreen,green,#000000
 Juggle Pong,breakBall,Colin O'Rourke,,,,,,,,https://github.com/ColinSORourke/ColinO_CGL/tree/master/docs/breakBall,#065A82,#21295C,#FFFFFF
 Curling,curling,Colin O'Rourke,Ely Rossman,Lane Albrecht,Ethan Michaels,James Liu,Finn Morrison,,,https://github.com/ColinSORourke/ColinO_CGL/tree/master/docs/curling,#065A82,#21295C,#FFFFFF
 DirColle,direction,Finn Morrison,,,,,,,,https://github.com/Fikemo/crisp-game-lib/tree/master/docs/direction,#065A82,#21295C,#FFFFFF
 Space Z,spacez,James Liu,,,,,,,,https://github.com/James8809/James_CGL/tree/master/docs/spacez,#1DC4FB,#122B57,#FFFFFF
-City Planner,cityplan,Jared Nolen,William Propp,,,,,,,https://github.com/Jnolen15/OneButton-CityBuilder/tree/main/crisp-game-lib/docs/cityplan,#f0f0f0,"#828282
-",#000000
+City Planner,cityplan,Jared Nolen,William Propp,,,,,,,https://github.com/Jnolen15/OneButton-CityBuilder/tree/main/crisp-game-lib/docs/cityplan,#f0f0f0,#828282,#000000
 Monday Night Movin',mnm,Jared Nolen,,,,,,,,https://github.com/Jnolen15/OneButton-mnm/tree/main/docs/mnm,#221530,#110a1a,#FFFFFF
 Slide Hero,slidehero,William Propp,,,,,,,,https://github.com/williamPropp/SlideHero/tree/main/slidehero,#0b1c2e,#c995b8,#FFFFFF
+Floppy Bird,FloppyBird,Larry Li,Jalen Pastor,William Propp,Bill Wong,,,,,https://github.com/DDRoscoe/Floppy-Bird/tree/master/docs/FloppyBird,#14273d,#d9163d,#FFFFFF
+Llama Trauma,LlamaTrauma,Ethan Michaels,,,,,,,,https://github.com/RegrettiSpaghetti/Ethan-M-170-CGL-Games/tree/main/docs/LlamaTrauma,#340d61,#f79ce7,#f2f6ff
+Flip Tiles,flipper,Ethan Michaels,Lane Albrecht,,,,,,,https://github.com/RegrettiSpaghetti/Ethan-M-170-CGL-Games/tree/main/docs/flipper,#091f4f,#87d7ed,#f0fcff
