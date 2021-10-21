@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-color: lightblue;
+}
+
+#text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#projects ul {
+    margin: auto;
+    width: 100%;
+    overflow-y: auto;
+    list-style-type: none;
+    padding:0
+}
+
+#projects li {
+    width: 240px;
+    height: 240px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+    background-color: lightgreen;
+    border: 5px solid green;
+    border-radius: 20px;
+}
+
+#projects li img{
+    margin-top:5px;
+}
+
