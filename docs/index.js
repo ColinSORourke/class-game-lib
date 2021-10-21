@@ -107,15 +107,17 @@ function function1( arrData) {
         image.src = arrData[j][1] + "/" + arrData[j][1] + ".gif";
         image.style.width = "150px";
         image.style.height = "auto"
-        gifDiv.appendChild(image)
-        li.appendChild(gifDiv)
-        let textDiv = document.createElement("div")
         let link = document.createElement('a')
         link.href= "games.html?" + arrData[j][1]
         link.target = "_blank"
-        let linkText = document.createTextNode(arrData[j][0])
-        link.appendChild(linkText)
-        textDiv.appendChild(link)
+        link.appendChild(image)
+        gifDiv.appendChild(link)
+        li.appendChild(gifDiv)
+        let textDiv = document.createElement("div")
+        
+        let gameName = document.createElement("h")
+        gameName.innerHTML = arrData[j][0];
+        textDiv.appendChild(gameName)
         let a = 2;
         let Authors = "";
         Authors += arrData[j][a]
