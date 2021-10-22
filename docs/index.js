@@ -99,13 +99,15 @@ function CSVToArray( strData, strDelimiter ){
 
 function function1( arrData) {
     var ul = document.getElementById("fullList");
+    let gameNumber = arrData.length - 1
+    //let j = gameNumber - 4;
     while (arrData.length > 1){
+    //while (j < arrData.length){
         let j = Math.floor(Math.random() * (arrData.length - 1)) + 1;
         var li = document.createElement("li");
         let gifDiv = document.createElement("div");
         gifDiv.id = "gif"
         let image = document.createElement("img")
-        console.log(arrData.length);
         image.src = arrData[j][1] + "/" + arrData[j][1] + ".gif";
         let link = document.createElement('a')
         link.href= "games.html?" + arrData[j][1]
@@ -138,5 +140,6 @@ function function1( arrData) {
         li.style.color = arrData[j][13]
         ul.appendChild(li);
         arrData.splice(j, 1);
+        //j+= 1;
     }
   }
